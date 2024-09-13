@@ -3,11 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | COSTECH HEET Project</title>
+    <title>Documents | COSTECH HEET Project</title>
     <link rel="stylesheet" href="../assets/css/styles.css" />
+    <style>
+        .document-list {
+            padding: 40px 0;
+        }
+        .document-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .document-item:hover {
+            background-color: #f8f9fa;
+            border: 2px solid #e0a64c ;
+        }
+        .document-icon {
+            font-size: 2rem;
+            color: #c1892d;
+            margin-right: 15px;
+        }
+        .document-name {
+            font-size: 1.1rem;
+            color: #333;
+            flex-grow: 1;
+        }
+        .download-icon {
+            color: #c1892d;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        .download-icon:hover {
+            color: #e0a64c;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
     <!-- icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,120 +53,144 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <div class="logo-left">
-      <img src="../assets/images/iso_logo.png" alt="COSTECH Logo" />
-    </div>
-    <div class="title">
-      <h1>
-        Tanzania Commission for Science and Technology <br />
-        (COSTECH)
-      </h1>
-      <h2>Higher Education for Economic Transformation (HEET) Project</h2>
-    </div>
-    <div class="logo-right">
-      <img src="../assets/images/heet.svg" alt="HEET Logo" />
-    </div>
-  </header>
-    <nav class="navbar navbar-expand-lg navbar-light mb-4">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link custom-nav-link "
-                style="color: white"
-                href="../index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link custom-nav-link"
-                style="color: white"
-                href="./about.html"
-                >About HEET</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link custom-nav-link"
-                style="color: white"
-                href="./implementation.html"
-                >Implementation Areas</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link custom-nav-link"
-                style="color: white"
-                href="./gallery.html"
-                >Gallery</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-              class="nav-link custom-nav-link active"
-              style="color: white"
-              href="./documents.html"
-              >Documents</a
-             >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link custom-nav-link"
-                style="color: white"
-                href="./NewsAndUpdates.html"
-                >News and Updates</a
-              >
-            </li>
-          </ul>
+    <header class="header">
+        <div class="logo-left">
+          <img src="../assets/images/iso_logo.png" alt="COSTECH Logo" />
         </div>
-      </nav>
-<main class="container">
-    <h2 class="text-center mb-4">COSTECH HEET Project Documents</h2>
-    <div class="row">
-        <div class="col-md-4 mb-3">
-            <div class="card border-light">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="bi bi-file-earmark-text"></i> Document 1</h5>
-                    <a href="#" class="btn btn-primary"><i class="bi bi-download"></i> Download</a>
-                </div>
+        <div class="title">
+          <h1>
+            Tanzania Commission for Science and Technology <br />
+            (COSTECH)
+          </h1>
+          <h2>Higher Education for Economic Transformation (HEET) Project</h2>
+        </div>
+        <div class="logo-right">
+          <img src="../assets/images/heet.svg" alt="HEET Logo" />
+        </div>
+      </header>
+        <nav class="navbar navbar-expand-lg navbar-light mb-4">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-between"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-nav-link "
+                    style="color: white"
+                    href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-nav-link"
+                    style="color: white"
+                    href="./about.html"
+                    >About HEET</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-nav-link"
+                    style="color: white"
+                    href="./implementation.html"
+                    >Implementation Areas</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-nav-link"
+                    style="color: white"
+                    href="./gallery.html"
+                    >Gallery</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                  class="nav-link custom-nav-link active"
+                  style="color: white"
+                  href="./documents.html"
+                  >Documents</a
+                 >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link custom-nav-link"
+                    style="color: white"
+                    href="./NewsAndUpdates.html"
+                    >News and Updates</a
+                  >
+                </li>
+              </ul>
             </div>
-        </div>
-        <div class="col-md-4 mb-3">
-            <div class="card border-light">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="bi bi-file-earmark-text"></i> Document 2</h5>
-                    <a href="#" class="btn btn-primary"><i class="bi bi-download"></i> Download</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-3">
-            <div class="card border-light">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="bi bi-file-earmark-text"></i> Document 3</h5>
-                    <a href="#" class="btn btn-primary"><i class="bi bi-download"></i> Download</a>
-                </div>
-            </div>
-        </div>
-    </div>
-   
-</main>
+          </nav>
 
+    <main class="container document-list">
+        <h2 class="text-center mb-4">COSTECH HEET Project Documents</h2>
+        <div class="list-group">
+            <div class="document-item">
+                <i class="bi bi-file-earmark-text document-icon"></i>
+                <span class="document-name">HEET Project Overview</span>
+                <a href="#" class="download-icon" title="Download">
+                    <i class="bi bi-download"></i>
+                </a>
+            </div>
+            <div class="document-item">
+                <i class="bi bi-file-earmark-text document-icon"></i>
+                <span class="document-name">Research Funding Guidelines</span>
+                <a href="#" class="download-icon" title="Download">
+                    <i class="bi bi-download"></i>
+                </a>
+            </div>
+            <div class="document-item">
+                <i class="bi bi-file-earmark-text document-icon"></i>
+                <span class="document-name">Innovation Capacity Building Report</span>
+                <a href="#" class="download-icon" title="Download">
+                    <i class="bi bi-download"></i>
+                </a>
+            </div>
+            <div class="document-item">
+                <i class="bi bi-file-earmark-text document-icon"></i>
+                <span class="document-name">Industry-Academia Collaboration Framework</span>
+                <a href="#" class="download-icon" title="Download">
+                    <i class="bi bi-download"></i>
+                </a>
+            </div>
+            <div class="document-item">
+                <i class="bi bi-file-earmark-text document-icon"></i>
+                <span class="document-name">ICT Infrastructure Upgrade Plan</span>
+                <a href="#" class="download-icon" title="Download">
+                    <i class="bi bi-download"></i>
+                </a>
+            </div>
+            <div class="document-item">
+                <i class="bi bi-file-earmark-text document-icon"></i>
+                <span class="document-name">COSTECH Staff Development Program</span>
+                <a href="#" class="download-icon" title="Download">
+                    <i class="bi bi-download"></i>
+                </a>
+            </div>
+            <div class="document-item">
+                <i class="bi bi-file-earmark-text document-icon"></i>
+                <span class="document-name">Project Monitoring and Evaluation Guidelines</span>
+                <a href="#" class="download-icon" title="Download">
+                    <i class="bi bi-download"></i>
+                </a>
+            </div>
+        </div>
+    </main>
 <footer class="footer">
     <div class="container">
       <div class="row">
