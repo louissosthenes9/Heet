@@ -220,7 +220,7 @@ footer {
 }
 .gallery-caption {
     background-color:var(--background-color);
-    color: black;
+    font: black;
     padding: 0.5rem;
     font-weight: 400;
     text-decoration: none;
