@@ -349,5 +349,27 @@ Dr. Nungu concluded by saying that these guidelines aim to strengthen coordinati
             });
         });
     </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the container holding the news cards
+    const newsContainer = document.querySelector('.row');
+    
+    // Get all news cards
+    const newsCards = Array.from(document.querySelectorAll('.news-card'));
+    
+    // Reverse the order of the news cards
+    newsCards.reverse();
+    
+    // Remove the current order of news cards
+    newsContainer.innerHTML = '';
+    
+    // Append the reversed news cards back into the container
+    newsCards.forEach(card => {
+      newsContainer.appendChild(card);
+    });
+  });
+</script>
+
   </body>
 </html>
